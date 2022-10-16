@@ -15,12 +15,15 @@ const getProductSingle = (id) => {
 
 const editProduct = (id,newProduct) => {
    return Promise.resolve(store.editProduct(id,newProduct))
- 
 }
 
+const deleteProduct = id =>{
+    return Promise.resolve(store.deleteProduct(id))
+}
 module.exports = {
     getProductSingle,
     addProduct,
     getProducts,
-    editProduct
+    editProduct,
+    deleteProduct
 };

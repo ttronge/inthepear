@@ -23,7 +23,12 @@ const editProduct = async (id, newProduct) => {
     foundedProduct.image = newProduct.image
     const productEdidited = await foundedProduct.save()
     return productEdidited
+}
 
+const deleteProduct = async id =>{
+    return Model.deleteOne({
+        _id:id
+    })
 }
 
 module.exports = {
@@ -31,4 +36,5 @@ module.exports = {
     getProducts,
     getSingleProduct,
     editProduct,
+    deleteProduct
 };
