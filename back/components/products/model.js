@@ -8,6 +8,7 @@ const mySchema = new Schema({
     stock: Number,
     description: String,
     category:String,
+    image: String,
 })
 
 const model = mongoose.model('Product', mySchema)

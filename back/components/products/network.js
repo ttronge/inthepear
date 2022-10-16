@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { addProduct, getProducts, getProductSingle } = require('./controller');
+const { addProduct, getProducts, getProductSingle,editProduct } = require('./controller');
 
 router.get('/:id', (req, res) => {
     const { params: { id } } = req
@@ -18,6 +18,12 @@ router.post('/', (req, res) => {
     addProduct(body)
         .then(a => res.status(201).send({ status: 'created successfully.' }))
         .catch(er => res.status(500).send({ status: 'There is an error , please try in another moment.' }))
+})
+
+router.put('/:id',(req,res)=>{
+    const { params: { id } , body } = req
+    editProduct(id,body)
+    .then(a => res.send(a))
 })
 
 module.exports = router
