@@ -10,7 +10,12 @@ const getProducts = () => {
     return Model.find({})
 }
 
+const getSingleProduct = (singleId) => {
+    return Model.findById(singleId)
+}
+
 module.exports = {
     addProduct,
     getProducts,
+    getSingleProduct,
 };
