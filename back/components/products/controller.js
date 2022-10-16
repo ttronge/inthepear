@@ -6,7 +6,7 @@ const addProduct = (product) => {
 };
 
 const getProducts = () => {
-    return Promise.resolve(store.getProducts);
+    return Promise.resolve(store.getProducts());
 };
 
 module.exports = {
