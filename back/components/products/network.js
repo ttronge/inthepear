@@ -6,7 +6,7 @@ router.get('/:id', (req, res) => {
     const { params: { id } } = req;
     getProductSingle(id)
         .then((pr) => res.status(200).send(pr))
-        .catch(err => res.status(404).send(err));
+        .catch(err => res.status(404).send({err}));
 })
 
 router.get('/', (req, res) => {
