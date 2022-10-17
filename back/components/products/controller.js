@@ -8,7 +8,7 @@ const addProduct = product => {
         };
         store.addProduct(product)
             .then((result) => resolve(result))
-            .catch(e => reject('FALTA DATA'));
+            .catch(e => reject('please send all fields'));
     });
 };
 
