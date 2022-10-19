@@ -4,25 +4,15 @@ import Home from './Pages/Home'
 import Filters from './Pages/Filters'
 import ErrorView from './Pages/ErrorView';
 import SingleProduct from './Pages/SingleProduct';
-import UserContext from './contexts/UserContext';
-import { useState } from 'react';
+import { UserProvider } from './contexts/UserContext';
 
 
 function App() {
 
-  const [ state, setState ] = useState(false);
-  const user = {
-    id: 1,
-    name: 'Luis',
-    favoriteDriks: [ 'beer', 'gin' ]
-  }
 
-
-
-  const data = { user, state, setState };
 
   return (
-    <UserContext.Provider value={ data } >
+    <UserProvider>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
@@ -31,7 +21,7 @@ function App() {
           <Route path='*' element={<ErrorView />} />
         </Routes>
       </BrowserRouter>
-    </UserContext.Provider>
+    </UserProvider>
   );
 };
 

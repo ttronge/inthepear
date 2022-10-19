@@ -6,22 +6,21 @@ import UserContext from '../../contexts/UserContext';
 const Filters = () => {
 
 
-    
-    
+
+
     // const data.user = useContext( UserContext );
-    const { user, state, setState } = useContext( UserContext );
-    const logg = { name: 'Agus', estado: state };
+    const { user, login, logout } = useContext(UserContext);
 
     return (
 
         <div>
-            <h1> { logg.estado ?  `Soy un Filters ${ logg.name }` : `Quien sos flaco?` } </h1>
-            { logg.estado ?
-                <button onClick={ () => setState(!state) }> Loggeado </button>
-            :
-                <button onClick={ () => setState(!state) }> Loggeate </button>
+            <h1> {user ? `Soy un Filters ${user.name}` : `Quien sos flaco?`} </h1>
+            {user ?
+                <button onClick={logout}> logut </button>
+                :
+                <button onClick={login}> login </button>
             }
-            <h2> { user ? `Hola ${ user.name }` : `Holi` } </h2>
+            <h2> {user ? `Hola ${user.name}` : `Holi`} </h2>
         </div>
     )
 }
