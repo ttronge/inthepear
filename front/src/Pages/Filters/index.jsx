@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { useContext } from 'react';
+import UserContext from '../../contexts/UserContext';
 
-const Filters = () => (
+const Filters = () => {
+  const { user } = useContext(UserContext);
+
+  return (
     <div>
-        <h1> soy un Filters agu s todo lo que ponga aca </h1>
+      soy un filtro
     </div>
-)
+  )
+}
 
 export default Filters;
