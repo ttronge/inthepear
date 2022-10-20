@@ -1,12 +1,13 @@
 const store = require('./store');
+const { validEmail } = require('../../utils');
  
-const addUser = product => {
+const addUser = user => {
     return new Promise((resolve, reject) => {
-        if (Object.entries(product).length === 0) {
+        if (!validEmail(user.email)) {
             reject('Invalid data to create an user');
             return false;
         };
-        store.adduser(product)
+        store.adduser(user)
             .then((result) => resolve(result))
             .catch(e => reject('please send all fields'));
     });
@@ -24,13 +25,13 @@ const getUseringle = (id) => {
     })
 };
  
-const editUser = (id, newProduct) => {
+const editUser = (id, product) => {
     return new Promise(async (resolve, reject) => {
-        if (Object.entries(newProduct).length === 0 || !id) {
+        if (Object.entries(product).length === 0 || !id) {
             reject('invalid data, please send the changes  the user ');
             return false;
         }
-        store.edituser(id, newProduct)
+        store.edituser(id, product)
             .then(result => resolve(result))
             .catch(e => reject('Not exist id'))
     });
