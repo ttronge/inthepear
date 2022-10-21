@@ -10,8 +10,8 @@ const Header = () => {
     <header className='container-header'>
       <nav className='container-nav'>
         <div className='content-nav-logo'>
-          <img className='LogoInThePear' src={LogoInThePear} alt='Logo In The Pear' />
-          <img className='LogoInThePearResponsive' src={LogoInThePearResponsive} alt='Logo In The Pear' />
+          <img className='logo-in-the-pear' src={LogoInThePear} alt='Logo In The Pear' />
+          <img className='logo-in-the-pear-responsive' src={LogoInThePearResponsive} alt='Logo In The Pear' />
         </div>
         <div className='content-nav-search'>
           <form className='content-form-nav'>

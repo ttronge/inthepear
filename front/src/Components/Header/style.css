@@ -22,13 +22,13 @@
 	margin-right: 10px;
 }
 
-.LogoInThePear {
+.logo-in-the-pear {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
 }
 
-.LogoInThePearResponsive {
+.logo-in-the-pear-responsive {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
@@ -100,11 +100,8 @@
 }
 
 @media only screen and (max-width: 524px) {
-	body {
-		background-color: #666666;
-	}
 
-	nav {
+	.container-nav {
 		width: 95%;
 		height: 80px;
 	}
@@ -114,11 +111,11 @@
 		height: 34px;
 	}
 
-	.LogoInThePear {
+	.logo-in-the-pear {
 		display: none;
 	}
 
-	.LogoInThePearResponsive {
+	.logo-in-the-pear-responsive {
 		display: block;
 	}
 
