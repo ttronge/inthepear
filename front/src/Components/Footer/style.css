@@ -1,0 +1,48 @@
+.container-footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  color: #FFFFFF;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.content-footer {
+  width: 90%;
+  height: 70px;
+  margin: 20px 0px;
+  /* ponerle auto en algun momento */
+  border: 3px solid red;
+  display: flex;
+}
+
+.footer-left {
+  width: 60%;
+  background-color: blue;
+  border: 1px solid green;
+  display: flex;
+}
+
+.footer-first-column {
+  width: 50%;
+  background-color: orange;
+}
+
+.footer-second-column {
+  width: 50%;
+}
+
+.footer-rigth {
+  width: 40%;
+  background-color: lightseagreen;
+  border: 1px solid green;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 740px) {
+  body {
+    background-color: aqua;
+  }
+}
