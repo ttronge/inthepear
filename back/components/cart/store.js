@@ -15,10 +15,10 @@ const getSingleShoppingCart = singleId => {
 
 const editShoppingCart = async (id, newShoppingCart) => {
     const foundedShoppingCart = await Model.findById({_id:id})
-    foundedShoppingCart.productId = newShoppingCart.name
-    foundedShoppingCart.quantity = newShoppingCart.price
-    foundedShoppingCart.price = newShoppingCart.stock
-    foundedShoppingCart.total = newShoppingCart.description
+    foundedShoppingCart.productId = newShoppingCart.productId
+    foundedShoppingCart.quantity = newShoppingCart.quantity
+    foundedShoppingCart.price = newShoppingCart.price
+    foundedShoppingCart.total = newShoppingCart.total
 
     const ShoppingCartEdidited = await foundedShoppingCart.save();
     return ShoppingCartEdidited;
