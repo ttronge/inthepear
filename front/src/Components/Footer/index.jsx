@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import LogoInThePear from '../../assets/LogoInThePear.png'
 import LogoInThePearResponsive from '../../assets/LogoInThePearResponsive.png';
 // CAMBIAR NOMBRE LOGO
@@ -18,20 +19,20 @@ const Footer = () => (
           <p>Tienda de bebidas</p>
         </div>
         <div className="footer-left-second-column">
-          <a className='txt-footer-left-second-column' href="http://localhost:3000/">Cómo comprar</a>
-          <a className='txt-footer-left-second-column' href="http://localhost:3000/">Cancelar una compra</a>
-          <a className='txt-footer-left-second-column' href="http://localhost:3000/">Contactos</a>
-          <a className='txt-footer-left-second-column' href="http://localhost:3000/">Franquicias</a>
+          <Link className='txt-footer-left-second-column' to="#">Cómo comprar</Link>
+          <Link className='txt-footer-left-second-column' to="#">Cancelar una compra</Link>
+          <Link className='txt-footer-left-second-column' to="#">Contactos</Link>
+          <Link className='txt-footer-left-second-column' to="#">Franquicias</Link>
         </div>
       </section>
       <section className="content-footer-rigth">
         <span className='content-footer-single-column-icons'>
-          <a className='icons-footer-single-colum' href='none'>
+          <Link className='icons-footer-single-colum' to='#'>
             < BsFacebook size="25px" color='#FFFFFF' />
-          </a>
-          <a className='icons-footer-single-colum' href='https://www.instagram.com/agustindip_d/' >
+          </Link>
+          <Link className='icons-footer-single-colum' to='https://www.instagram.com/agustindip_d/' >
             < BsInstagram size="25px" color='#FFFFFF' />
-          </a>
+          </Link>
         </span>
         <p className='txt-footer-rigth-single-column'>agustomi@gmail.com</p>
         <p className='txt-footer-rigth-single-column'>1144444444</p>
