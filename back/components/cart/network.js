@@ -23,7 +23,6 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
     const { params: { id }, body } = req;
-    console.log(id);
     editShoppingCart(id, body)
         .then(a => res.status(201).send({ status: 'edited successfully.' }))
         .catch(er => {
