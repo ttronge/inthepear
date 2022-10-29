@@ -19,10 +19,14 @@ const mySchema = new Schema({
         type: String,
         required: true
     },
-    category: {
-        type: String,
-        required: true
-    },
+    category:
+    
+        [{
+            type: Schema.ObjectId,
+            ref: 'Categories'
+        }]
+    
+    ,
     image: {
         type: String,
         required: true

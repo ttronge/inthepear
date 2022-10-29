@@ -1,12 +1,26 @@
 const Model = require('./model');
+const Cateories = require('../categories/model')
 
 const addProduct = (newProduct) => {
+    const { category } = newProduct
+    const categoriaId = Cateories.findById({ _id: category })
+
     const product = new Model(newProduct);
     return product.save();
 };
 
 const getProducts = () => {
-    return Model.find({});
+    return new Promise((resolve, reject) => {
+        const productos = Model.find({})
+        .populate('category')
+        .exec((err,populated)=>{
+            if(err){
+                reject(err)
+                return false
+            }
+            resolve(populated)
+        })
+    })
 };
 
 const getSingleProduct = singleId => {
@@ -14,7 +28,7 @@ const getSingleProduct = singleId => {
 };
 
 const editProduct = async (id, newProduct) => {
-    const foundedProduct = await Model.findById({_id:id})
+    const foundedProduct = await Model.findById({ _id: id })
     foundedProduct.name = newProduct.name
     foundedProduct.price = newProduct.price
     foundedProduct.stock = newProduct.stock
@@ -26,9 +40,9 @@ const editProduct = async (id, newProduct) => {
     return productEdidited;
 };
 
-const deleteProduct = async id =>{
+const deleteProduct = async id => {
     return Model.deleteOne({
-        _id:id
+        _id: id
     });
 };
 
