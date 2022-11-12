@@ -5,6 +5,7 @@ import Filters from './Pages/Filters'
 import ErrorView from './Pages/ErrorView';
 import SingleProduct from './Pages/SingleProduct';
 import { UserProvider } from './contexts/UserContext';
+import  PreFooter  from './Components/PreFooter';
 import  Footer  from './Components/Footer';
 
 
@@ -18,6 +19,7 @@ function App() {
           <Route path='/producto/:name' element={<SingleProduct />} />
           <Route path='*' element={<ErrorView />} />
         </Routes>
+        <PreFooter />
         <Footer />
       </BrowserRouter>
     </UserProvider>
