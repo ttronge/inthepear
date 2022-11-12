@@ -1,10 +1,22 @@
 import React from 'react';
+import { BiSearch } from 'react-icons/bi';
 import './styles.css';
 
 const SearchNav = () => {
     return (
-        <h1>Soy el SearchNav</h1>
+        <div className='container__nav--search'>
+          
+          <form className='content__form--nav'>
+            <input
+              className='input__form--nav'
+              placeholder='Buscar productos, marcas y ofertas...'
+            />
+            <button className='btn__form--nav'>
+              <BiSearch size="65%" color='7E7E7E' />
+            </button>
+          </form>
+        </div>
     )
-}
+};
 
 export default SearchNav;

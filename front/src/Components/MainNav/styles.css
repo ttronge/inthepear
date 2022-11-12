@@ -1,11 +1,43 @@
-.mainNav{
-    width: 90%;
-    height: 50px;
-    border: 3px solid orange;
+li {
+  list-style: none;
 }
 
-@media only screen and (max-width: 524px){
-    .mainNav{
-        display: none;
-    }
+.container__main-nav {
+  width: 90%;
+  height: 50px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.content__main-nav{
+  display: flex;
+  color: #FFFFFF;
+}
+
+.item__main-nav{
+  width: auto;
+  height: 100%;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+
+.sub-item__main-nav{
+  width: 200px;
+  height: 50px;
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  position: absolute;
+  top: 32px;
+  left: 2px;
+}
+
+@media only screen and (max-width: 524px) {
+  .main-nav {
+    display: none;
+  }
 }
