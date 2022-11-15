@@ -41,9 +41,15 @@
 .btn__form--nav {
   width: 42px;
   height: 42px;
-  background-color: #E5E5E5;
   border: none;
   border-left: 1px solid rgb(184, 180, 180);
+  background-color: #E5E5E5;
+}
+
+.icon__nav--search {
+  width: 25px;
+  height: 25px;
+  color: #7E7E7E;
 }
 
 @media only screen and (max-width: 524px) {

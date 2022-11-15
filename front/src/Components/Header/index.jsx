@@ -1,30 +1,30 @@
 import LogoInThePear from '../../assets/LogoInThePear.png';
 import LogoInThePearResponsive from '../../assets/LogoInThePearResponsive.png';
+import SearchNav from '../SearchNav';
 import { BiCart } from 'react-icons/bi';
 import { BsPersonCircle } from 'react-icons/bs';
 import './styles.css';
-import SearchNav from '../SearchNav';
 
 const Header = () => {
   return (
-    <header className='container-header'>
-      <nav className='container-nav'>
-        <div className='content-nav-logo'>
+    <header className='container__header'>
+      <nav className='container__nav'>
+        <a className='content__nav--logo' href='http://localhost:3000/'>
           <img className='logo-in-the-pear' src={LogoInThePear} alt='Logo In The Pear' />
           <img className='logo-in-the-pear-responsive' src={LogoInThePearResponsive} alt='Logo In The Pear' />
-        </div>
+        </a>
         <SearchNav />
-        <div className='content-nav-panel'>
-          <button className='btn-menu-nav'>
-            <BiCart size="60%" color='#FFFFFF' />
+        <div className='content__nav--panel'>
+          <button className='btn__panel--nav'>
+            <BiCart className='container__btn--panel__nav' />
           </button>
-          <button className='btn-menu-nav'>
-            <BsPersonCircle size="60%" color='#FFFFFF' />
+          <button className='btn__panel--nav'>
+            <BsPersonCircle className='container__btn--panel__nav' />
           </button>
         </div>
       </nav>
     </header>
   )
-}
+};
 
 export default Header;

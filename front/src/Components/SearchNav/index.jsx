@@ -11,7 +11,7 @@ const SearchNav = () => {
           placeholder='Buscar productos, marcas y ofertas...'
         />
         <button className='btn__form--nav'>
-          <BiSearch size="65%" color='7E7E7E' />
+          <BiSearch className='icon__nav--search' />
         </button>
       </form>
     </div>
