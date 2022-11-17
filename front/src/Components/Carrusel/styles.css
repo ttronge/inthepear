@@ -1,75 +1,65 @@
 .container__carrusel {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
 .container__img--carrusel {
-    width: 100%;
-    height: 85vh;
-    display: flex;
-    position: relative;
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  position: relative;
 }
 
 .img__carrusel {
-    width: 100%;
-    height: 100%;
-    z-index: 3;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
 }
 
 .container__panel--carrusel {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
 }
 
 .btn__carrusel {
-    width: auto;
-    height: 100%;
-    padding: 0px 40px;
-    border: none;
-    color: #FFFFFF;
-    background-color: transparent;
-    cursor: pointer;
-    opacity: 0.5;
-    z-index: 5;
-    display: none;
+  width: auto;
+  height: 100%;
+  padding: 0px 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 5;
 }
 
-.btn__carrusel:first-child:hover {
-    background-image: linear-gradient(to right, #000000, transparent);
-    opacity: 1;
-}
-
-.btn__carrusel:hover {
-    background-image: linear-gradient(to left, #000000, transparent);
-    opacity: 1;
-}
-
-.container__carrusel:hover .btn__carrusel {
-    display: block;
+.carrusel__icon {
+  width: 40px;
+  height: auto;
+  color: #FFFFFF;
+  opacity: 0.5;
 }
 
 @media only screen and (max-width: 1050px) {
-    .container__img--carrusel {
-        height: 400px;
-    }
+  .container__img--carrusel {
+    height: 400px;
+  }
 }
 
 @media only screen and (max-width: 840px) {
-    .container__img--carrusel {
-        height: 300px;
-    }
+  .container__img--carrusel {
+    height: 300px;
+  }
 }
 
 @media only screen and (max-width: 590px) {
-    .container__img--carrusel {
-        height: 150px;
-    }
+  .container__img--carrusel {
+    height: 150px;
+  }
 }
