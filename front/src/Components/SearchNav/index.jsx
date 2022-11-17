@@ -15,7 +15,7 @@ const SearchNav = () => {
         </button>
       </form>
     </div>
-  )
+  );
 };
 
 export default SearchNav;
