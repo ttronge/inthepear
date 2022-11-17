@@ -48,6 +48,6 @@ const PreFooter = () => {
       </section>
     </article>
   );
-}
+};
 
 export default PreFooter;
