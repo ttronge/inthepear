@@ -5,6 +5,7 @@ import SearchNav from '../SearchNav';
 import { BiCart } from 'react-icons/bi';
 import { BsPersonCircle } from 'react-icons/bs';
 import './styles.css';
+import MainNav from '../MainNav';
 
 const Header = () => {
   return (
@@ -15,17 +16,26 @@ const Header = () => {
           <img className='logo-in-the-pear-responsive' src={LogoInThePearResponsive} alt='Logo In The Pear' />
         </a>
         <SearchNav />
-        <div className='content__nav--panel'>
-          <button className='btn__panel--nav'>
-            <BiCart className='container__btn--panel__nav' />
-          </button>
-          <button className='btn__panel--nav'>
-            <BsPersonCircle className='container__btn--panel__nav' />
-          </button>
-        </div>
-      </nav>
 
-      < MainNav />
+
+
+        <div className='container__nav--panel'>
+          
+          <button className='btn__panel--nav'>
+            <BiCart className='content__btn--panel__nav' />
+          </button>
+
+
+          <button className='btn__panel--nav'>
+            <BsPersonCircle className='content__btn--panel__nav' />
+          </button>
+          
+        </div>
+
+
+
+      </nav>
+      <MainNav />
     </header>
   )
 };

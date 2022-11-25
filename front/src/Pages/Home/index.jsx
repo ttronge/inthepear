@@ -5,7 +5,7 @@ import './styles.css';
 const Home = () => (
     <div className='container__home'>
         <Carrusel />
-        <h1> soy un home agus</h1>
+        {/* <h1> soy un home agus</h1> */}
     </div>
 )
 
