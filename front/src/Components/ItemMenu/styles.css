@@ -1,0 +1,30 @@
+.item__menu {
+  width: auto;
+  height: auto;
+  /* height: 50px; */
+  margin: 14px 8px 8px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.subCatMenu {
+  width: 100px;
+  height: 100px;
+  padding: 8px;
+  background-color: #FFFFFF;
+  color: #000000;
+  position: absolute;
+  top: 20px;
+  left: 8px;
+  display: none;
+}
+
+.item__menu:hover > .subCatMenu {
+  display: block;
+}

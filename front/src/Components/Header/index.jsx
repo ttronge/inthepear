@@ -5,7 +5,7 @@ import SearchNav from '../SearchNav';
 import { BiCart } from 'react-icons/bi';
 import { BsPersonCircle } from 'react-icons/bs';
 import './styles.css';
-import MainNav from '../MainNav';
+import MenuNav from '../MenuNav';
 
 const Header = () => {
   return (
@@ -35,7 +35,7 @@ const Header = () => {
 
 
       </nav>
-      <MainNav />
+      <MenuNav />
     </header>
   )
 };
