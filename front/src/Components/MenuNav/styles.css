@@ -1,18 +1,19 @@
-.container__main-nav {
+.container__menu-nav {
   width: 90%;
   height: auto;
   display: flex;
   justify-content: center;
+  background-color: red;
 }
 
-.content__main-nav {
+.item-menu-nav {
   width: auto;
   height: auto;
   display: flex;
   align-items: center;
 }
 
-.item__menu {
+.element {
   width: auto;
   height: auto;
   /* height: 50px; */

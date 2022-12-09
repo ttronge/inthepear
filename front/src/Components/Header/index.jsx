@@ -31,9 +31,7 @@ const Header = () => {
           </button>
           
         </div>
-
-
-
+        
       </nav>
       <MenuNav />
     </header>
