@@ -1,19 +1,19 @@
-import './styles.css';
+// import './styles.css';
 
-const SubCat = ( {elementCat} ) => {
+// const SubCat = ( {elementCat} ) => {
 
-  if (elementCat.childrens) {
-    console.log('si');
-  } else {
-    console.log('no');
-  }
+//   if (elementCat.childrens) {
+//     console.log('si');
+//   } else {
+//     console.log('no');
+//   }
 
-  console.log(elementCat);
-  return (
-    <div>
-      Hola
-    </div>
-  );
-};
+//   console.log(elementCat);
+//   return (
+//     <div>
+//       Hola
+//     </div>
+//   );
+// };
 
-export default SubCat;
+// export default SubCat;

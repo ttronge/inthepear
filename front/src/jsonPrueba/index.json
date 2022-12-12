@@ -2,144 +2,164 @@
   {
     "name": "name prod",
     "id": 1,
-    "nameCat": "Promociones",
-    "childrens": [
-      {"subName": "color"},
-      {"subName": "marca"},
-      {"subName": "tipo"},
-      {"subName": "region"},
-      {"subName": "rating"},
-      {"subName": "descripcion"}
-    ]
+    "category": "Promociones"
   },
   {
     "name": "name prod",
     "id": 2,
-    "nameCat": "Vinos",
+    "category": "Vinos",
     "childrens": [
-      {"subName": "color"},
-      {"subName": "marca"},
-      {"subName": "tipo"},
-      {"subName": "region"},
-      {"subName": "rating"},
-      {"subName": "descripcion"}
-    ]
+      {"subName": "color",
+      "variants": [ "rojo", "blanco", "rosado" ]},
+      {"subName": "tipo",
+      "variants": [ "tinto", "jhonnie walker" ]},
+      {"subName": "marcas",
+      "variants": [ "branca", "quilmes" ]},
+      {"subName": "region",
+      "variants": [ "argentina", "escocia" ]}
+    ],
+    "rating": 1,
+    "descripcion": "descripcion"
   },
   {
     "name": "name prod",
     "id": 3,
-    "nameCat": "Espumantes",
+    "category": "Espumantes",
     "childrens": [
-      {"subName": "color"},
-      {"subName": "marca"},
-      {"subName": "tipo"},
-      {"subName": "region"},
-      {"subName": "rating"},
-      {"subName": "descripcion"}
-    ]
+      {"subName": "color",
+      "variants": [ "rojo", "blanco", "rosado" ]},
+      {"subName": "tipo",
+      "variants": [ "tinto", "jhonnie walker" ]},
+      {"subName": "marcas",
+      "variants": [ "branca", "quilmes" ]},
+      {"subName": "region",
+      "variants": [ "argentina", "escocia" ]}
+    ],
+    "rating": 2,
+    "descripcion": "descripcion"
   },
   {
     "name": "name prod",
     "id": 4,
     "category": "Whiskies",
     "childrens": [
-      {"subName": "color"},
-      {"subName": "marca"},
-      {"subName": "tipo"},
-      {"subName": "region"},
-      {"subName": "rating"},
-      {"subName": "descripcion"}
-    ]
+      {"subName": "color",
+      "variants": [ "rojo", "blanco", "rosado" ]},
+      {"subName": "tipo",
+      "variants": [ "tinto", "jhonnie walker" ]},
+      {"subName": "marcas",
+      "variants": [ "branca", "quilmes" ]},
+      {"subName": "region",
+      "variants": [ "argentina", "escocia" ]}
+    ],
+    "rating": 3,
+    "descripcion": "descripcion"
   },
   {
     "name": "name prod",
     "id": 5,
     "category": "Gin",
     "childrens": [
-      {"subName": "color"},
-      {"subName": "marca"},
-      {"subName": "tipo"},
-      {"subName": "region"},
-      {"subName": "rating"},
-      {"subName": "descripcion"}
-    ]
+      {"subName": "color",
+      "variants": [ "rojo", "blanco", "rosado" ]},
+      {"subName": "tipo",
+      "variants": [ "tinto", "jhonnie walker" ]},
+      {"subName": "marcas",
+      "variants": [ "branca", "quilmes" ]},
+      {"subName": "region",
+      "variants": [ "argentina", "escocia" ]}
+    ],
+    "rating": 4,
+    "descripcion": "descripcion"
   },
   {
     "name": "name prod",
     "id": 6,
     "category": "Licores",
     "childrens": [
-      {"subName": "color"},
-      {"subName": "marca"},
-      {"subName": "tipo"},
-      {"subName": "region"},
-      {"subName": "rating"},
-      {"subName": "descripcion"}
-    ]
+      {"subName": "color",
+      "variants": [ "rojo", "blanco", "rosado" ]},
+      {"subName": "tipo",
+      "variants": [ "tinto", "jhonnie walker" ]},
+      {"subName": "marcas",
+      "variants": [ "branca", "quilmes" ]},
+      {"subName": "region",
+      "variants": [ "argentina", "escocia" ]}
+    ],
+    "rating": 5,
+    "descripcion": "descripcion"
   },
   {
     "name": "name prod",
     "id": 7,
     "category": "Vodka",
     "childrens": [
-      {"subName": "color"},
-      {"subName": "marca"},
-      {"subName": "tipo"},
-      {"subName": "region"},
-      {"subName": "rating"},
-      {"subName": "descripcion"}
-    ]
+      {"subName": "color",
+      "variants": [ "rojo", "blanco", "rosado" ]},
+      {"subName": "tipo",
+      "variants": [ "tinto", "jhonnie walker" ]},
+      {"subName": "marcas",
+      "variants": [ "branca", "quilmes" ]},
+      {"subName": "region",
+      "variants": [ "argentina", "escocia" ]}
+    ],
+    "rating": 6,
+    "descripcion": "descripcion"
   },
   {
     "name": "name prod",
     "id": 8,
     "category": "Ron",
     "childrens": [
-      {"subName": "color"},
-      {"subName": "marca"},
-      {"subName": "tipo"},
-      {"subName": "region"},
-      {"subName": "rating"},
-      {"subName": "descripcion"}
-    ]
+      {"subName": "color",
+      "variants": [ "rojo", "blanco", "rosado" ]},
+      {"subName": "tipo",
+      "variants": [ "tinto", "jhonnie walker" ]},
+      {"subName": "marcas",
+      "variants": [ "branca", "quilmes" ]},
+      {"subName": "region",
+      "variants": [ "argentina", "escocia" ]}
+    ],
+    "rating": 7,
+    "descripcion": "descripcion"
   },
   {
     "name": "name prod",
     "id": 9,
     "category": "Aperitivos",
     "childrens": [
-      {"subName": "color"},
-      {"subName": "marca"},
-      {"subName": "tipo"},
-      {"subName": "region"},
-      {"subName": "rating"},
-      {"subName": "descripcion"}
-    ]
+      {"subName": "color",
+      "variants": [ "rojo", "blanco", "rosado" ]},
+      {"subName": "tipo",
+      "variants": [ "tinto", "jhonnie walker" ]},
+      {"subName": "marcas",
+      "variants": [ "branca", "quilmes" ]},
+      {"subName": "region",
+      "variants": [ "argentina", "escocia" ]}
+    ],
+    "rating": 8,
+    "descripcion": "descripcion"
   },
   {
     "name": "name prod",
     "id": 10,
     "category": "Cerveza",
     "childrens": [
-      {"subName": "color"},
-      {"subName": "marca"},
-      {"subName": "tipo"},
-      {"subName": "region"},
-      {"subName": "rating"},
-      {"subName": "descripcion"}
-    ]
+      {"subName": "color",
+      "variants": [ "rojo", "blanco", "rosado" ]},
+      {"subName": "tipo",
+      "variants": [ "tinto", "jhonnie walker" ]},
+      {"subName": "marcas",
+      "variants": [ "branca", "quilmes" ]},
+      {"subName": "region",
+      "variants": [ "argentina", "escocia" ]}
+    ],
+    "rating": "rating",
+    "descripcion": "descripcion"
   },
   {
     "name": "name prod",
     "id": 11,
-    "category": "Accesorios",
-    "childrens": [
-      {"subName": "color"},
-      {"subName": "marca"},
-      {"subName": "tipo"},
-      {"subName": "region"},
-      {"subName": "rating"},
-      {"subName": "descripcion"}
-    ]
+    "category": "Accesorios"
   }
 ]

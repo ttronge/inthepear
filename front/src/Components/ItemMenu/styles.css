@@ -1,32 +1,128 @@
-.item__menu {
+.element {
   width: auto;
   height: auto;
   /* height: 50px; */
   margin: 14px 8px 8px 8px;
+  font-size: 12px;
+  font-weight: 500;
   text-transform: uppercase;
-  display: flex;
+  color: #FFFFFF;
   cursor: pointer;
   position: relative;
 }
 
-.element {
-  font-size: 12px;
-  font-weight: 500;
-  color: #FFFFFF;
-}
 
-.subCatMenuContainer {
-  width: 100px;
-  height: 100px;
-  padding: 8px;
-  background-color: #FFFFFF;
+.childrens {
+  max-width: auto;
+  height: auto;
+  padding: 4px;
+  border: 1px solid black;
   color: #000000;
+  background-color: #FFFFFF;
   position: absolute;
-  top: 20px;
-  left: 8px;
+  top: 16px;
+  left: 10px;
   display: none;
 }
 
-.item__menu:hover > .subCatMenuContainer {
-  display: block;
+
+.content_subcat {
+  width: auto;
+  display: flex;
+  padding: 4px;
+  flex-direction: column;
 }
+
+.content_subcat{
+  width: auto;
+}
+
+.element:hover > .childrens {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ,
+    "childrens": [
+      {"subName": "color"},
+      {"subName": "marca"},
+      {"subName": "tipo"},
+      {"subName": "region"},
+      {"subName": "rating"},
+      {"subName": "descripcion"}
+    ]
+,
+    "childrens": [
+      {"subName": "color"},
+      {"subName": "marca"},
+      {"subName": "tipo"},
+      {"subName": "region"},
+      {"subName": "rating"},
+      {"subName": "descripcion"}
+    ]
+,
+    "childrens": [
+      {"subName": "color"},
+      {"subName": "marca"},
+      {"subName": "tipo"},
+      {"subName": "region"},
+      {"subName": "rating"},
+      {"subName": "descripcion"}
+    ]
+,
+    "childrens": [
+      {"subName": "color"},
+      {"subName": "marca"},
+      {"subName": "tipo"},
+      {"subName": "region"},
+      {"subName": "rating"},
+      {"subName": "descripcion"}
+    ]
+,
+    "childrens": [
+      {"subName": "color"},
+      {"subName": "marca"},
+      {"subName": "tipo"},
+      {"subName": "region"},
+      {"subName": "rating"},
+      {"subName": "descripcion"}
+    ]
+,
+    "childrens": [
+      {"subName": "color"},
+      {"subName": "marca"},
+      {"subName": "tipo"},
+      {"subName": "region"},
+      {"subName": "rating"},
+      {"subName": "descripcion"}
+    ]
+,
+    "childrens": [
+      {"subName": "color"},
+      {"subName": "marca"},
+      {"subName": "tipo"},
+      {"subName": "region"},
+      {"subName": "rating"},
+      {"subName": "descripcion"}
+    ] */

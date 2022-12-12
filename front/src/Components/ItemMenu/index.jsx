@@ -1,36 +1,57 @@
-import SubCat from '../SubCatMenuNav';
+// import SubCat from '../SubCatMenuNav';
 import './styles.css';
 
 
 const ItemMenu = ({ catMenu }) => {
-  // console.log(catMenu);
+  console.log(catMenu);
+  const { childrens } = catMenu;
+  console.log(childrens);
   // console.log(catMenu.childrens)
-  const {childrens} = catMenu;
+  // console.log(catMenu);
   return (
-    <div>
+    <span className='element'>
+      {catMenu.category}
       {
-        childrens.map( ( subName, index ) => {
+        childrens && childrens.map(() => {
           return (
-            <p key={index}> {subName.subName} </p>
-            // <h1 key={index}>
-            //   { c.sabName }
-            // </h1>
+              <div className='childrens'>
+                {
+                  childrens && childrens.map(({ subName, variants }, index) => {
+                    return (
+                      <div className='subCat' key={index}>
+                        <div className='content_subcat'>
+                          <h4>{subName}</h4>
+                          { variants.map( (variants, index) => {
+                            return (
+                              <p key={index}> {variants} </p>
+                            )
+                          } ) }
+                        </div>
+                      </div>
+                    )
+                  })
+                }
+              </div>
+
           )
-        } )
+        })
       }
-    </div>
+
+
+    </span>
+    // { childrens && childrens.map( ( catMenu, index ) => { return (
+    //   <ItemMenu key={index}
+    //     catMenu={catMenu}
+    //   />
+    // )}
+
+    // ) }
+    // <div className='cajita'> {catMenu.subName} </div>
+    // <div className='bloque'>
+
+    // </div>
   )
-  
+
 };
 
 export default ItemMenu;
-
-{/* <div className='item-menu-nav'>
-        {
-          catMenu.childrens ? <div>nada</div>  : catMenu.map( ( e, index ) =>(
-            <div className='element' key={index}>
-              {e.nameCat} 
-            </div> 
-          ))
-        }
-  </div> */}
