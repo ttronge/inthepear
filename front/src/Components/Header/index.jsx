@@ -4,8 +4,8 @@ import LogoInThePearResponsive from '../../assets/LogoInThePearResponsive.png';
 import SearchNav from '../SearchNav';
 import { BiCart } from 'react-icons/bi';
 import { BsPersonCircle } from 'react-icons/bs';
-import './styles.css';
 import MenuNav from '../MenuNav';
+import './styles.css';
 
 const Header = () => {
   return (
@@ -16,22 +16,14 @@ const Header = () => {
           <img className='logo-in-the-pear-responsive' src={LogoInThePearResponsive} alt='Logo In The Pear' />
         </a>
         <SearchNav />
-
-
-
         <div className='container__nav--panel'>
-          
           <button className='btn__panel--nav'>
             <BiCart className='content__btn--panel__nav' />
           </button>
-
-
           <button className='btn__panel--nav'>
             <BsPersonCircle className='content__btn--panel__nav' />
           </button>
-          
         </div>
-        
       </nav>
       <MenuNav />
     </header>

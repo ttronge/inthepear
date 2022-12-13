@@ -2,7 +2,10 @@
   {
     "name": "name prod",
     "id": 1,
-    "category": "Promociones"
+    "category": "Promociones",
+    "childrens": [
+      {
+      "variants": [ "rojo", "blanco", "rosado" ]}]
   },
   {
     "name": "name prod",
@@ -14,7 +17,7 @@
       {"subName": "tipo",
       "variants": [ "tinto", "jhonnie walker" ]},
       {"subName": "marcas",
-      "variants": [ "branca", "quilmes" ]},
+      "variants": [ "branca", "quilmes", "brahama", "artesanal" ]},
       {"subName": "region",
       "variants": [ "argentina", "escocia" ]}
     ],
@@ -114,9 +117,9 @@
       {"subName": "color",
       "variants": [ "rojo", "blanco", "rosado" ]},
       {"subName": "tipo",
-      "variants": [ "tinto", "jhonnie walker" ]},
+      "variants": [ "tinto" ]},
       {"subName": "marcas",
-      "variants": [ "branca", "quilmes" ]},
+      "variants": [ "branca", "quilmes", "jhonnie walker" ]},
       {"subName": "region",
       "variants": [ "argentina", "escocia" ]}
     ],
@@ -160,6 +163,9 @@
   {
     "name": "name prod",
     "id": 11,
-    "category": "Accesorios"
+    "category": "Accesorios",
+    "childrens": [
+      {"variants": [ "basos", "posa basos", "copas" ]}
+    ]
   }
 ]

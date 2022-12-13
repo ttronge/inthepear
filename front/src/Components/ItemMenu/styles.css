@@ -1,35 +1,33 @@
 .element {
   width: auto;
-  height: auto;
-  /* height: 50px; */
-  margin: 14px 8px 8px 8px;
+  height: 100%;
+  margin: 0px 8px;
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer;
+  display: flex;
+  align-items: center;
   position: relative;
 }
 
-
 .childrens {
-  max-width: auto;
+  width: auto;
   height: auto;
-  padding: 4px;
   border: 1px solid black;
   color: #000000;
   background-color: #FFFFFF;
   position: absolute;
-  top: 16px;
-  left: 10px;
+  top: 30px;
+  left: 14px;
   display: none;
 }
-
 
 .content_subcat {
   width: auto;
   display: flex;
-  padding: 4px;
+  margin: 8px 10px;
   flex-direction: column;
 }
 
@@ -37,92 +35,23 @@
   width: auto;
 }
 
+.subname{
+  border-bottom: 1px solid grey;
+}
+
+.variants {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.variants:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  transition-property: background-color;
+  transition-duration: 1s;
+}
+
 .element:hover > .childrens {
   display: flex;
   flex-direction: row;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ,
-    "childrens": [
-      {"subName": "color"},
-      {"subName": "marca"},
-      {"subName": "tipo"},
-      {"subName": "region"},
-      {"subName": "rating"},
-      {"subName": "descripcion"}
-    ]
-,
-    "childrens": [
-      {"subName": "color"},
-      {"subName": "marca"},
-      {"subName": "tipo"},
-      {"subName": "region"},
-      {"subName": "rating"},
-      {"subName": "descripcion"}
-    ]
-,
-    "childrens": [
-      {"subName": "color"},
-      {"subName": "marca"},
-      {"subName": "tipo"},
-      {"subName": "region"},
-      {"subName": "rating"},
-      {"subName": "descripcion"}
-    ]
-,
-    "childrens": [
-      {"subName": "color"},
-      {"subName": "marca"},
-      {"subName": "tipo"},
-      {"subName": "region"},
-      {"subName": "rating"},
-      {"subName": "descripcion"}
-    ]
-,
-    "childrens": [
-      {"subName": "color"},
-      {"subName": "marca"},
-      {"subName": "tipo"},
-      {"subName": "region"},
-      {"subName": "rating"},
-      {"subName": "descripcion"}
-    ]
-,
-    "childrens": [
-      {"subName": "color"},
-      {"subName": "marca"},
-      {"subName": "tipo"},
-      {"subName": "region"},
-      {"subName": "rating"},
-      {"subName": "descripcion"}
-    ]
-,
-    "childrens": [
-      {"subName": "color"},
-      {"subName": "marca"},
-      {"subName": "tipo"},
-      {"subName": "region"},
-      {"subName": "rating"},
-      {"subName": "descripcion"}
-    ] */
