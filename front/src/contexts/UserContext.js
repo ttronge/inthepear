@@ -5,17 +5,16 @@ const UserContext = createContext();
 
 const UserProvider = ({ children }) => {
 
-    const [user, setUster] = useState('');
-    
-    const data = { user };
+  const [user, setUster] = useState('');
 
-    return (
-        <UserContext.Provider value={data}>
-            {children}
-        </UserContext.Provider>
-    )
+  const data = { user };
+
+  return (
+    <UserContext.Provider value={data}>
+      {children}
+    </UserContext.Provider>
+  )
 }
-
 
 export default UserContext;
 export { UserProvider };

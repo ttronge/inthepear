@@ -4,7 +4,7 @@ import LogoInThePear from '../../assets/LogoInThePear.png';
 import LogoInThePearResponsive from '../../assets/LogoInThePearResponsive.png';
 import { BsInstagram } from 'react-icons/bs';
 import { BsFacebook } from 'react-icons/bs';
-import './style.css';
+import './styles.css';
 
 const Footer = () => (
 
@@ -51,6 +51,6 @@ const Footer = () => (
       </section>
     </article>
   </footer>
-)
+);
 
 export default Footer;
