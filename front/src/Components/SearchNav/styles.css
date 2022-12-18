@@ -9,7 +9,6 @@
 .content__form--nav {
   width: 90%;
   height: 50px;
-  /*HACER Q MIDA MENOS EL HEADER PARA QUE QUEDE SIMILAR A FULL ESCABIO*/
   padding: 0px 6px;
   border-radius: 4px;
   display: flex;
@@ -71,4 +70,5 @@
     width: 30px;
     height: 30px;
   }
+  
 }

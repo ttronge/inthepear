@@ -4,7 +4,7 @@ import './styles.css';
 const ItemMenu = ({ catMenu }) => {
   const { childrens } = catMenu;
   return (
-    <div className='item__men--nav'>
+    <div className='item__menu--nav'>
       {catMenu.category}
       {
         childrens &&
@@ -16,7 +16,7 @@ const ItemMenu = ({ catMenu }) => {
                   {subName && <h4 className='name__sub-item--menu-nav'>
                     {subName}
                   </h4>}
-                  {variants.map((variants, index) => {
+                  {variants && variants.map((variants, index) => {
                     return (
                       <p className='variant__sub-item--menu-nav' key={index}>
                         {variants}

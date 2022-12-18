@@ -1,4 +1,4 @@
-.item__men--nav {
+.item__menu--nav {
   width: auto;
   height: 100%;
   margin: 0px 8px;
@@ -47,7 +47,7 @@
   transition-duration: 1s;
 }
 
-.item__men--nav:hover > .container__sub-item--menu-nav {
+.item__menu--nav:hover > .container__sub-item--menu-nav {
   display: flex;
   flex-direction: row;
 }

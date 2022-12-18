@@ -14,7 +14,6 @@
 .container__nav {
   width: 90%;
   height: auto;
-  /* height: 90px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,7 +22,6 @@
 .content__nav--logo {
   width: 158px;
   height: 66px;
-  /* margin-right: 10px; */
 }
 
 .logo-in-the-pear {
@@ -42,7 +40,6 @@
 .container__nav--panel {
   width: 158px;
   height: 66px;
-  /* margin-left: 10px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,7 +70,6 @@
 
   .container__nav {
     width: 90%;
-    /* height: 80px; */
     height: auto;
   }
 
@@ -94,10 +90,7 @@
     width: 86px;
     height: 34px;
   }
-
-  /* .btn__panel--nav{
-    justify-content: flex-end;
-  } */
+  
   .btn__panel--nav:first-child {
     justify-content: flex-start;
   }
