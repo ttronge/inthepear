@@ -6,7 +6,7 @@ import './styles.css';
 const MenuNav = () => {
   return(
     <div className='container__menu-nav'>
-      <div className='element__menu-nav'>
+      <div className='sub-container__menu-nav'>
         {
         catMenu.map( ( catMenu, index ) => (
           <ItemMenu key={index}

@@ -5,14 +5,16 @@
   justify-content: center;
 }
 
-.element__menu-nav {
+.sub-container__menu-nav {
   width: auto;
   height: 34px;
   display: flex;
 }
 
 @media screen and (max-width: 1231px) {
+  
   .container__menu-nav {
     display: none;
   }
+
 }
